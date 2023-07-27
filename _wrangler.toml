@@ -12,3 +12,7 @@ CLIENT_ID = "110851"
 GOALS = "{\"Walk\":250,\"Ride\":500}"
 CALLBACK_URL = "http://link-to-api.workers.dev/callback"
 PASSWORD = "SomePassword1234"
+
+#SECRETS
+#[ACCESS_TOKEN]
+#[CLIENT_SECRET]

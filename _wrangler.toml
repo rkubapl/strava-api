@@ -3,7 +3,7 @@ main = "src/worker.ts"
 compatibility_date = "2023-07-17"
 
 kv_namespaces = [
-    { binding = "STRAVA_DATA",  id = "ID_TO_KV", preview_id = "PREVIEW_ID" }
+    { binding = "STRAVA_DATA",  id = "PASTE_YOUR_COPIED_KV_NAMESPACE_ID_HERE }
 ]
 
 [vars]

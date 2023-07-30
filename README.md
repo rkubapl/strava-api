@@ -54,7 +54,8 @@ Go to your [Cloudflare dashboard](https://dash.cloudflare.com/), navigate to Wor
 - `ACCESS_TOKEN`: Obtain it from your Strava application settings at https://www.strava.com/settings/api.
 - `CLIENT_SECRET`: Also available in your Strava application settings.
 
-Congratulations! Your Strava Goal Setter app is now deployed and ready to help you achieve your goals this summer.
+Congratulations! API for your Strava Goal Setter app is now deployed and ready to help you achieve your goals this summer.
+Now you can set up [website app](https://github.com/rkubapl/strava-frontend) to display your goals online.
 
 ## License
 

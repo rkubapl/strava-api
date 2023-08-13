@@ -149,7 +149,9 @@ export default {
 			const data = await strava.getAllActivities(accessToken);
 
 			if(data && data instanceof Array) {
-				const processedData = utills.processActivities(data);
+				// await env.STRAVA_DATA.put("ADDITIONAL_ACTIVITIES", JSON.stringify([{"name":"Pielgrzymka na Jasną Górę","distance":120000,"type":"Walk","elapsed_time":0,"start_date": "2023-08-11T00:00:00.000Z"}]));
+				const additionalActivities = await env.STRAVA_DATA.get("ADDITIONAL_ACTIVITIES");
+				const processedData = utills.processActivities(data, additionalActivities ? JSON.parse(additionalActivities) : []);
 
 				await env.STRAVA_DATA.put("DATA", JSON.stringify(processedData));
 				await env.STRAVA_DATA.put("UPDATE_TIME", this.getTimestampInSeconds().toString());
